@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personal_information">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/btn_color" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/pi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgAcc"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/account"
+        android:layout_below="@id/pi"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/imgAcc"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editphone"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:hint="Enter Your Phone Number"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/phone"
+        android:layout_marginStart="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/editphone"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:hint="Enter Your Name"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/name"
+        android:layout_marginStart="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/editname"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editjob"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:hint="Enter Your Job"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/job"
+        android:layout_marginStart="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/editjob"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editgender"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:hint="Enter Your Gender"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/gender"
+        android:layout_marginStart="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/editgender"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editdate"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:hint="Enter Your BirthDay"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/date"
+        android:layout_marginStart="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/editdate"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editaddress"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:hint="Enter Your Address"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/address"
+        android:layout_marginStart="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

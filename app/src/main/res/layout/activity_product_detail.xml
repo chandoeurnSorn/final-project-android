@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_detail">
+
+    <ImageView
+        android:id="@+id/imgCar"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/carrots_big"/>
+
+    <TextView
+        android:id="@+id/textReEda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended"
+        android:background="@color/yellow"
+        android:layout_marginTop="25dp"
+        android:layout_alignEnd="@id/imgCar"/>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrots"
+        android:textSize="25sp"
+        android:textColor="@color/brown"
+        android:layout_below="@id/imgCar"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgBuy"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/purchase"
+        android:layout_below="@id/imgCar"
+        android:layout_toEndOf="@id/textCar"
+        android:layout_marginStart="250dp"/>
+
+    <TextView
+        android:id="@+id/priceCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1Kg-7000៛ = 1.71$"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:layout_below="@id/textCar"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/proCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Takeo"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/priceCar"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/addressCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Planted in Kampot Province."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/proCar"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:id="@+id/standardCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Good Quality"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/addressCar"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:id="@+id/usingCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Without chemical fertilizer"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/standardCar"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:id="@+id/delCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Delivery: Buyer have to pay by themselves(depend on near or far.)"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/usingCar"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:id="@+id/seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seller:"
+        android:textSize="25sp"
+        android:textColor="@color/brown"
+        android:layout_below="@id/delCar"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgSeller"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/seller"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/seller"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cat" />
+
+    <TextView
+        android:id="@+id/sellername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chiiwa Store"
+        android:textSize="20sp"
+        android:textColor="@color/yellow"
+        android:layout_below="@id/seller"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/cat"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/sellerprovince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kampot"
+        android:textSize="18sp"
+        android:layout_below="@id/sellername"
+        android:layout_toEndOf="@id/cat"
+        android:layout_marginStart="25dp"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow_right"
+        android:layout_alignEnd="@id/imgSeller"
+        android:layout_below="@id/seller"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"/>
+
+</RelativeLayout>

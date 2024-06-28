@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/btn_color" />
+
+    <ImageView
+        android:id="@+id/imgAcc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/account"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/imgAcc"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/phNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="012 345 678"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/name"
+        android:layout_toEndOf="@id/imgAcc"
+        android:layout_marginStart="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/exit"
+        android:layout_toEndOf="@id/imgAcc"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imgAcc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:text="Personal Information"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgInfo"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignStart="@id/btnInfo"-->
+<!--        android:layout_alignTop="@id/btnInfo"-->
+<!--        android:src="@drawable/account"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="20dp"/>-->
+
+    <Button
+        android:id="@+id/btnFav"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Favorite Shop"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_below="@id/btnInfo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_centerHorizontal="true"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgFav"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignStart="@id/btnFav"-->
+<!--        android:layout_alignTop="@id/btnFav"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="9dp"-->
+<!--        android:src="@drawable/heart" />-->
+
+    <Button
+        android:id="@+id/btnWallet"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Wallet and Loan"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_below="@id/btnFav"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_centerHorizontal="true"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgWallet"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/wallet"-->
+<!--        android:layout_alignStart="@id/btnWallet"-->
+<!--        android:layout_alignTop="@id/btnWallet"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="20dp"/>-->
+
+    <Button
+        android:id="@+id/btnSetting"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Setting"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_below="@id/btnWallet"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_centerHorizontal="true"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgSetting"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/setting"-->
+<!--        android:layout_alignStart="@id/btnSetting"-->
+<!--        android:layout_alignTop="@id/btnSetting"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="20dp"/>-->
+
+    <Button
+        android:id="@+id/btnUsing"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="How to use this app"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_below="@id/btnSetting"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_centerHorizontal="true"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgUsing"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/using"-->
+<!--        android:layout_alignStart="@id/btnUsing"-->
+<!--        android:layout_alignTop="@id/btnUsing"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="20dp"/>-->
+
+    <Button
+        android:id="@+id/btnService"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Service"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_below="@id/btnUsing"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_centerHorizontal="true"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgService"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/service"-->
+<!--        android:layout_alignStart="@id/btnService"-->
+<!--        android:layout_alignTop="@id/btnService"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="20dp"/>-->
+
+    <Button
+        android:id="@+id/btnTerms"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Terms and Privacy Policy"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_below="@id/btnService"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_centerHorizontal="true"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgTerms"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/terms"-->
+<!--        android:layout_alignStart="@id/btnTerms"-->
+<!--        android:layout_alignTop="@id/btnTerms"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="20dp"/>-->
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/btnTerms"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/btn_color"/>
+
+    <TextView
+        android:id="@+id/textVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/btnTerms"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"/>
+
+    <TextView
+        android:id="@+id/textNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.4.6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/btnTerms"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="30dp"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgVersion"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/version"-->
+<!--        android:layout_alignStart="@id/image"-->
+<!--        android:layout_alignTop="@id/image"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="20dp"/>-->
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Home"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

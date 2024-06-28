@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgAcc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/account"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/shCart"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Shopping Cart"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/bg_corner"
+        android:layout_toEndOf="@id/imgAcc"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/purchase"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignEnd="@id/shCart" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/map"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/img1"
+        android:layout_alignTop="@id/img1"/>
+
+    <TextView
+        android:id="@+id/textlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select your location"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:layout_toEndOf="@id/location"
+        android:layout_alignTop="@id/img1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery*"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/img1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <RadioButton
+        android:id="@+id/option1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Delivered by seller"
+        android:textSize="18sp"
+        android:textColor="@color/dark_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/delivery"/>
+
+    <RadioButton
+        android:id="@+id/option2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Pick it up by yourself"
+        android:textSize="18sp"
+        android:textColor="@color/dark_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/option1"/>
+
+    <TextView
+        android:id="@+id/paycash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Cash*"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/option2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cash"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Cash"
+        android:textSize="18dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/light_blue"
+        android:layout_below="@id/paycash"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:id="@+id/aba"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="ABA"
+        android:textSize="18dp"
+        android:layout_below="@id/paycash"
+        android:layout_toEndOf="@id/cash"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/light_blue"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/aba"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/cash"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/cat" />
+
+    <TextView
+        android:id="@+id/sellername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chiiwa Store"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/cash"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@id/cat"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount"
+        android:textSize="18sp"
+        android:layout_below="@id/img2"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textDisAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="%0"
+        android:textSize="18sp"
+        android:layout_below="@id/img2"
+        android:layout_toEndOf="@id/textDis"
+        android:layout_marginStart="200dp"/>
+
+    <TextView
+        android:id="@+id/textDelCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Cost"
+        android:textSize="18sp"
+        android:layout_below="@id/textDis"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textDelCost1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depend on Distance"
+        android:textSize="18sp"
+        android:layout_below="@id/textDisAmount"
+        android:layout_toEndOf="@id/textDis"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price"
+        android:textSize="18sp"
+        android:layout_below="@id/textDelCost"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7000៛"
+        android:textSize="18sp"
+        android:layout_below="@id/textDelCost1"
+        android:layout_toEndOf="@id/textDis"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/moreinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Information"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textPrice"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:hint="Write more note!"
+        android:textSize="18sp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/moreinfo"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Buy Now"
+        android:textSize="18sp"
+        android:layout_below="@id/note"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"/>
+
+</RelativeLayout>

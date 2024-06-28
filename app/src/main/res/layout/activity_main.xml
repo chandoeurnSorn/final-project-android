@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khmer Agriculture"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="330dp"
+            android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/btn1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/textTitle"
+        android:text="Contact Us:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/disabled_color"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imgGoogle"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/btn1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/google"/>
+
+    <ImageView
+        android:id="@+id/imgFacebook"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/btn1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/imgGoogle"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/facebook"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/btn1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@id/imgFacebook"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/imgTwitter"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/twitter"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/imgFacebook"
+        android:text="Get started"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/btn_color"
+        android:layout_marginTop="100dp"/>
+
+</RelativeLayout>

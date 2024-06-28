@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/location"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/img1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/research"
+        android:layout_alignTop="@id/text1"
+        android:layout_marginStart="180dp"
+        android:layout_toEndOf="@id/text1"/>
+
+    <ImageButton
+        android:id="@+id/img2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/agri"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_corner"/>
+
+    <ImageButton
+        android:id="@+id/imgMar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"
+        android:src="@drawable/market"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/imgTech"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"
+        android:src="@drawable/technical"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/imgMar"
+        android:layout_marginStart="20dp"/>
+
+    <ImageButton
+        android:id="@+id/imgloan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"
+        android:src="@drawable/aba"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/imgTech"
+        android:layout_marginStart="30dp"/>
+
+    <ImageButton
+        android:id="@+id/imgInfo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"
+        android:layout_toEndOf="@id/imgloan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/information" />
+
+    <ImageButton
+        android:id="@+id/imgHealth"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"
+        android:src="@drawable/health"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/imgInfo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"/>
+
+    <TextView
+        android:id="@+id/textMar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgMar"
+        android:text="Market"
+        android:textSize="12dp"
+        android:layout_alignStart="@id/imgMar"
+        android:layout_marginStart="7dp"/>
+
+    <TextView
+        android:id="@+id/textTech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgTech"
+        android:text="Technical"
+        android:textSize="12dp"
+        android:layout_alignStart="@id/imgTech"/>
+
+    <TextView
+        android:id="@+id/textloan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgloan"
+        android:text="Loan"
+        android:textSize="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignStart="@id/imgloan"/>
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgInfo"
+        android:text="Information"
+        android:textSize="12dp"
+        android:layout_alignStart="@id/imgInfo"/>
+
+    <TextView
+        android:id="@+id/textHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgHealth"
+        android:text="Health"
+        android:textSize="12sp"
+        android:layout_alignStart="@id/imgHealth"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:text="All Product"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@id/textMar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/orange"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/product"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imgFrBean"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@id/img3"
+        android:layout_alignTop="@id/img3"
+        android:src="@drawable/french_beans"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/textFrBean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="French Beans"
+        android:textSize="20sp"
+        android:layout_below="@id/product"
+        android:layout_toEndOf="@id/imgFrBean"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/priceFrBean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1Kg-18000៛ "
+        android:textColor="@color/orange"
+        android:layout_below="@id/textFrBean"
+        android:layout_toEndOf="@id/imgFrBean"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgPurchase"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/purchase"
+        android:layout_below="@id/product"
+        android:layout_marginTop="15dp"
+        android:layout_alignEnd="@id/img3" />
+
+    <TextView
+        android:id="@+id/Discount"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:text="Product Discount %"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@id/img3"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/orange"/>
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/Discount"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imgCabb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@id/img4"
+        android:layout_alignTop="@id/img4"
+        android:src="@drawable/cabbage"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/textCabb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cabbage"
+        android:textSize="20sp"
+        android:layout_below="@id/Discount"
+        android:layout_toEndOf="@id/imgCabb"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/priceCabb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1Kg-9000៛ Dis-10%"
+        android:textSize="13sp"
+        android:textColor="@color/orange"
+        android:layout_below="@id/textCabb"
+        android:layout_toEndOf="@id/imgCabb"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/purchase"
+        android:layout_below="@id/Discount"
+        android:layout_marginTop="15dp"
+        android:layout_alignEnd="@id/img4" />
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_corner"
+        android:layout_below="@id/img4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imgEdam"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@id/img5"
+        android:layout_alignTop="@id/img5"
+        android:src="@drawable/edamame"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/textEdam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edamame"
+        android:textSize="20sp"
+        android:layout_below="@id/img4"
+        android:layout_toEndOf="@id/imgEdam"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/priceEdam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1Kg-20000៛ Dis-10%"
+        android:textSize="13sp"
+        android:textColor="@color/orange"
+        android:layout_below="@id/textEdam"
+        android:layout_toEndOf="@id/imgEdam"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/purchase"
+        android:layout_below="@id/img4"
+        android:layout_marginTop="15dp"
+        android:layout_alignEnd="@id/img5" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/images"
+        android:layout_below="@id/img5"/>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Order"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_below="@id/img5"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/logo"/>
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="POST"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_below="@id/img5"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/btnOrder"
+        android:layout_marginStart="15dp"/>
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Profile"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/btn_color"
+        android:layout_below="@id/img5"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/btnPost"
+        android:layout_marginStart="15dp"/>
+
+</RelativeLayout>
